@@ -20,7 +20,7 @@ jobs:
           auto-update-conda: true
           activate-environment: conda_env
           use-only-tar-bz2: true
-          python-version: ${{ matrix.python-version }}
+          python-version: ${{ matrix.python_version }}
 
       - name: check_info
         shell: bash -el {0}
