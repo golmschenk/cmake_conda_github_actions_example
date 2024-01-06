@@ -24,7 +24,9 @@ jobs:
 
       - name: which_python
         shell: bash -el {0}
-        run: which python
+        run: |
+          conda activate conda_env
+          which python
 
       - name: which_pip
         shell: bash -el {0}
