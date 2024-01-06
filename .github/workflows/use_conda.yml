@@ -26,6 +26,7 @@ jobs:
         shell: bash -el {0}
         run: |
           export PATH=$CONDA/envs/conda_env/bin:$PATH
+          echo $PATH
           conda info
           conda list
           which pip
