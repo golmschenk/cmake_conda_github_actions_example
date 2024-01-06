@@ -18,6 +18,7 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v3
         with:
           auto-update-conda: true
+          use-only-tar-bz2: true
           python-version: ${{ matrix.python-version }}
 
       - name: which_python
