@@ -36,3 +36,9 @@ jobs:
         shell: bash -el {0}
         run: ps -p $$
 
+      - name: conda_info
+        shell: bash -el {0}
+        run: |
+          conda info
+          conda list
+
